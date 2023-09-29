@@ -1,4 +1,5 @@
 # az
+[![Go](https://github.com/turtureanu/az/actions/workflows/go.yml/badge.svg)](https://github.com/turtureanu/az/actions/workflows/go.yml)
 
 Simple *fast* file finder made in [Go](https://go.dev/).
 
