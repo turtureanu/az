@@ -11,7 +11,7 @@ Usage:
   az [pattern] [path] [flags]
 
 Flags:
-  -d, --detail   results return filename, path, size, date modified, and file type
+  -d, --detail   results return path, filename, size, date modified, and file type
   -H, --hidden   search hidden files and directories
   -j, --json     output results in JSON format
   -h, --help     help for az

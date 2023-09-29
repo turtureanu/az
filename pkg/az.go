@@ -137,7 +137,7 @@ var rootCmd = &cobra.Command{
 func Execute() {
 
 	rootCmd.PersistentFlags().BoolVarP(&jsonFlag, "json", "j", false, "output results in JSON format")
-	rootCmd.PersistentFlags().BoolVarP(&detailFlag, "detail", "d", false, "results return filename, path, size, date modified, and file type")
+	rootCmd.PersistentFlags().BoolVarP(&detailFlag, "detail", "d", false, "results return path, filename, size, date modified, and file type")
 	rootCmd.PersistentFlags().BoolVarP(&hiddenFlag, "hidden", "H", false, "search hidden files and directories")
 
 	rootCmd.Flags().SortFlags = false
