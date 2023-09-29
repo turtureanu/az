@@ -19,7 +19,7 @@ Flags:
 
 RegEx support for patterns:
 
-- *
+- \*
 - ?
 - \\ escaping
 - character range
