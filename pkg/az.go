@@ -140,7 +140,7 @@ func Execute() {
 	rootCmd.PersistentFlags().BoolVarP(&detailFlag, "detail", "d", false, "results return filename, path, size, date modified, and file type")
 	rootCmd.PersistentFlags().BoolVarP(&hiddenFlag, "hidden", "H", false, "search hidden files and directories")
 
-	rootCmd.PersistentFlags().SortFlags = false
+	rootCmd.Flags().SortFlags = false
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
