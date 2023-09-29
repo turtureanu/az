@@ -46,7 +46,7 @@ func searchForFiles(_ *cobra.Command, args []string) {
 		fmt.Printf("%s is not a directory", dirPath)
 	}
 
-	err = filepath.Walk(dirPath, func(path string, info os.FileInfo, err error) error {
+	err = filepath.WalkDir(dirPath, func(path string, info os.DirEntry, err error) error {
 		if path == dirPath {
 			return nil
 		}
@@ -75,14 +75,12 @@ func searchForFiles(_ *cobra.Command, args []string) {
 			if detailFlag {
 				fileInfo = FileInfo{
 					Name:     info.Name(),
-					Size:     info.Size(),
-					Modified: info.ModTime(),
+					Size:     fileInfo.Size,
+					Modified: fileInfo.Modified,
 					Path:     path,
 				}
 				if info.IsDir() {
 					fileInfo.Type = "dir"
-				} else if info.Mode()&os.ModeSymlink != 0 {
-					fileInfo.Type = "symlink"
 				} else {
 					fileInfo.Type = "file"
 				}
