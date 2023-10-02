@@ -2,6 +2,9 @@
 
 Simple *fast* file finder made in [Go](https://go.dev/).
 
+> [!NOTE]
+> Faster alternative made in Rust: [azrust](https://github.com/onzecki/azrust)
+
 ## Usage
 
 ```man
