@@ -1,9 +1,9 @@
 # az
 
-Simple *fast* file finder made in [Go](https://go.dev/).
+> [!WARNING]
+> Archiving the project in favor of a faster alternative made in Rust: [azrust](https://github.com/onzecki/azrust)
 
-> [!NOTE]
-> Faster alternative made in Rust: [azrust](https://github.com/onzecki/azrust)
+Simple *fast* file finder made in [Go](https://go.dev/).
 
 ## Usage
 
